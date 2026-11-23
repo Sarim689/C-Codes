@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct user{
+	char* username;
+	int age;
+	struct address{
+		char* city;
+		char* country;
+	}location;
+};
+int main(){
+	struct user fbuser;
+	fbuser.username="Sarim@Siddiqui";
+	fbuser.age=20;
+	fbuser.location.city="Lucknow";
+	fbuser.location.country="India";
+	printf("name=%s\n",fbuser.username);
+	printf("age=%d\n",fbuser.age);
+	printf("country=%s\n",fbuser.location.country);
+	printf("city=%s\n",fbuser.location.city);
+	return 0;
+}

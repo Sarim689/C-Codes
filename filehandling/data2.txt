@@ -1,0 +1,1 @@
+Stream is an abstraction of data flow either from h/w to processor or from processor to h/w. 
